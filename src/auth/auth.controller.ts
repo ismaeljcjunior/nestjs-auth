@@ -8,7 +8,7 @@ export class AuthController {
 
     }
 
-    @Post('user/login')
+    @Post('/login')
     @HttpCode(HttpStatus.OK)
     @UseGuards(LocalAuthGuard)
     login() {
